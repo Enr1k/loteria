@@ -22,7 +22,10 @@ img {
 }
 
 .pinto {
-	top: 3em;
-	left: 2em;
+	top: 2em;
+	left: 1.75em;
 	position: absolute;
+	display: none;
+	width: 75%;
+	height: auto;
 }
