@@ -8,180 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Loteria</title>
-	
-	<script language="javascript">
-		function showBean(bean) {
-			switch(bean) {
-				case 'bean0':
-					document.getElementById("bean0").style.display = "block";
-					break;
-				case 'bean1':
-					document.getElementById("bean1").style.display = "block";
-					break;
-				case 'bean2':
-					document.getElementById("bean2").style.display = "block";
-					break;
-				case 'bean3':
-					document.getElementById("bean3").style.display = "block";
-					break;
-				case 'bean4':
-					document.getElementById("bean4").style.display = "block";
-					break;
-				case 'bean5':
-					document.getElementById("bean5").style.display = "block";
-					break;
-				case 'bean6':
-					document.getElementById("bean6").style.display = "block";
-					break;
-				case 'bean7':
-					document.getElementById("bean7").style.display = "block";
-					break;
-				case 'bean8':
-					document.getElementById("bean8").style.display = "block";
-					break;
-				case 'bean9':
-					document.getElementById("bean9").style.display = "block";
-					break;
-				case 'bean10':
-					document.getElementById("bean10").style.display = "block";
-					break;
-				case 'bean11':
-					document.getElementById("bean11").style.display = "block";
-					break;
-				case 'bean12':
-					document.getElementById("bean12").style.display = "block";
-					break;
-				case 'bean13':
-					document.getElementById("bean13").style.display = "block";
-					break;
-				case 'bean14':
-					document.getElementById("bean14").style.display = "block";
-					break;
-				case 'bean15':
-					document.getElementById("bean15").style.display = "block";
-					break;
-			}
-		}
-	</script>
-	
+    <title>Loteria</title>	
   </head>
-  <body>
+  <body onload="create_grid()">
     <h3>Loteria</h3>
 
-  <div class="container">
-	<div class="row">
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean0'); return false;">
-				<img src="img/loteria01.png" class="image">
-			</a>
-			<img id="bean0" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean1'); return false;">
-				<img src="img/loteria02.png" class="image">
-			</a>
-			<img id="bean1" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean2'); return false;">
-				<img src="img/loteria03.png" class="image">
-			</a>
-			<img id="bean2" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean3'); return false;">
-				<img src="img/loteria04.png" class="image">
-			</a>
-			<img id="bean3" src="img/pinto-bean.png" class="pinto">
-		</div>
+	<div id="tabla" class="container">
 	</div>
-	<div class="row">
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean4'); return false;">
-				<img src="img/loteria05.png" class="image">
-			</a>
-			<img id="bean4" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean5'); return false;">
-				<img src="img/loteria06.png" class="image">
-			</a>
-			<img id="bean5" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean6'); return false;">
-				<img src="img/loteria07.png" class="image">
-			</a>
-			<img id="bean6" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean7'); return false;">
-				<img src="img/loteria08.png" class="image">
-			</a>
-			<img id="bean7" src="img/pinto-bean.png" class="pinto">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean8'); return false;">
-				<img src="img/loteria09.png" class="image">
-			</a>
-			<img id="bean8" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean9'); return false;">
-				<img src="img/loteria20.png" class="image">
-			</a>
-			<img id="bean9" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean10'); return false;">
-				<img src="img/loteria22.png" class="image">
-			</a>
-			<img id="bean10" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean11'); return false;">
-				<img src="img/loteria21.png" class="image">
-			</a>
-			<img id="bean11" src="img/pinto-bean.png" class="pinto">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean12'); return false;">
-				<img src="img/loteria41.png" class="image">
-			</a>
-			<img id="bean12" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean13'); return false;">
-				<img src="img/loteria18.png" class="image">
-			</a>
-			<img id="bean13" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean14'); return false;">
-				<img src="img/loteria35.png" class="image">
-			</a>
-			<img id="bean14" src="img/pinto-bean.png" class="pinto">
-		</div>
-		<div class="col col-sm-1">
-			<a id="beanlink" href="#" onclick="javascript:showBean('bean15'); return false;">
-				<img src="img/loteria54.png" class="image">
-			</a>
-			<img id="bean15" src="img/pinto-bean.png" class="pinto">
-		</div>
-	</div>
-  </div>
 
-    <!-- Optional JavaScript -->
-	<!-- <script type="text/javascript" src="actions.js"></script> -->
-	
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Optional JavaScript -->
+	<script type="text/javascript" src="actions.js"></script>
+	
   </body>
 </html>
