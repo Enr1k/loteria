@@ -64,7 +64,6 @@ function create_grid(){
     div_container.appendChild(grid_row);
   }
   console.log("Tabla: " + div_container);
-
 }
 
 function create_grid_row(row){
