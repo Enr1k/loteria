@@ -96,7 +96,6 @@ function create_anchor_tag(row, column){
   var anchor_tag = createDomElement(anchor_open_tag);
   let img_tag = create_img_tag();
   anchor_tag.appendChild(img_tag);
-  console.log("Anchor tag: " + anchor_tag.childNodes.toString());
 
   return anchor_tag;
 }
@@ -118,7 +117,6 @@ function get_random_card_num(){
   var temp_num = 0;
   while(card_num === -1){
     temp_num = (Math.floor(Math.random() * CARD_TOTAL) + 1);
-	console.log("Temp num: " + temp_num);
     if (!buffer.includes(temp_num)){
       buffer.push(temp_num);
       card_num = temp_num;
