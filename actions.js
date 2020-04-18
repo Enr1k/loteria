@@ -63,7 +63,6 @@ function create_grid(){
     grid_row = create_grid_row(row);
     div_container.appendChild(grid_row);
   }
-  console.log("Tabla: " + div_container);
 }
 
 function create_grid_row(row){
@@ -75,8 +74,6 @@ function create_grid_row(row){
   for (var column = 0 ; column < COLUMNS; column++){
     cell = create_grid_cell(row, column);
     grid_row.appendChild(cell);
-	
-	console.log("Grid Row: " + grid_row);
   }
 
   return grid_row;
@@ -89,7 +86,6 @@ function create_grid_cell(row, column){
   var grid_cell = createDomElement(div_cell_open_tag, div_cell_class_attr);
   var anchor_tag = create_anchor_tag(row, column);
   grid_cell.appendChild(anchor_tag);
-  console.log("Grid Cell: " + grid_cell);
   
   return grid_cell;
 }
