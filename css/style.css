@@ -9,15 +9,16 @@ img {
 	transition: all 1s;
 }
 
-.image {
+.card {
 	position: relative;
 	top: 0;
 	display: block;
 	height: auto;
-	width: 150%;
+	width: auto;
+	/* width: 150%; */
 }
 
-.image:hover {
+.card:hover {
 	transform: scale(1.05);
 }
 
